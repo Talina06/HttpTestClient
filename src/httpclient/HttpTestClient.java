@@ -58,9 +58,9 @@ public class HttpTestClient {
                   new OutputStreamWriter(os, "UTF-8"));
             writer.write(content);
             writer.flush();
-            writer.close();     
+            writer.close();
             os.close();
-            
+         
             int responseCode = connection.getResponseCode();
             System.out.println("POST Response Code :: " + responseCode);
                 
